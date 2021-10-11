@@ -1,0 +1,120 @@
+html body{
+    margin: 0;
+    padding: 0;
+}
+
+.container p{
+    padding-top: 11px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.container .navbar{
+    padding:0px 15px;
+    padding-top: 0;
+}
+.container .main .dollar_kurs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container>.main>.dollar_kurs>span{
+    font-size: 0.87rem;
+    padding-left: 10px;
+}
+.main .ob_havo{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ob_havo>select{
+    align-self: center;
+}
+.ob_havo>p{
+    align-self: center;
+    padding: 0px 6px 4px 0px;
+}
+.container li{
+    padding-right: 20px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.latest-news h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.latest-news .mini-content{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.latest-news .mini-content .content a{
+    color: black;
+}
+
+
+.latest-news .mini-content .header span{
+    float:right;
+    color: gray;
+    font-size: 13px;
+} 
+
+.middle-content .malumotlar a{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.middle-content .malumotlar p{
+    font-size: 16px;
+}
+
+.main .log_rasm>img{
+    height: 50px;
+}
+
+
+.container-fluid .container .mini-contents{
+    padding-top: 15px;
+    font-size: 13px;
+}
+    .container-fluid .container .mini-contents span{
+        float:right;
+    }
+
+@media screen and (max-width:993px){
+    .asosiy{
+        display: none;
+    }
+    .main .knopkalar{
+        display: none;
+    }
+}
+@media screen and (max-width:775px){
+    .main .dollar_kurs{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:360px){
+    .main .ob_havo{
+        display: none;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+    }
+    .main .log_rasm>img{
+        height: 30px;
+    }    
+}
